@@ -1,5 +1,3 @@
-import com.sun.org.apache.xpath.internal.SourceTree;
-
 import java.sql.*;
 
 /**
@@ -31,22 +29,15 @@ public class Main
         stmt = con.createStatement();
     }
 
-    public static void main(String[] args) throws Exception
+    public Main() throws Exception
     {
+        Class.forName("com.mysql.jdbc.Driver"); //Chargement du driver
 
-        String nomBD = "test";
-        String url = "jdbc:mysql://flatbrains.eu/" + nomBD;
-        String login = "NicoTPJDBC";
-        String mdp = "1234";
-
-        Main main = new Main(nomBD, url, login, mdp);
-        main.creerTable();
-        main.requetesSelectCafe();
-        main.close();
-
-
+        con = DriverManager.getConnection(url, login, mdp);
+        checkForSQLWarnings(con.getWarnings());
+        printInfo();
+        stmt = con.createStatement();
     }
-
     /**
      * Print stdout some informations about the database connection
      */
@@ -134,6 +125,7 @@ public class Main
 
     /**
      * Test si les tables sont crées et si non, les crées avec les données
+     *
      * @throws SQLException
      */
     private void creerTable() throws SQLException
@@ -174,23 +166,45 @@ public class Main
 
     /**
      * SELECT * FROM CAFE
+     *
      * @return
      * @throws SQLException
      */
     public void requetesSelectCafe() throws SQLException
     {
         String res;
-        ResultSet rs =  stmt.executeQuery("SELECT * FROM CAFE");
-        System.out.println("NOM_CAFE\tFO_ID\tPRIX\tVENTES\tTOTAL");
+        ResultSet rs = stmt.executeQuery("SELECT * FROM CAFE");
+
         while(rs.next())
         {
             res = "";
-            res += rs.getString("NOM_CAFE") + "\t";
+            res += rs.getString("NOM_CAFE") + "\n";
             res += rs.getString("FO_ID") + "\t";
             res += rs.getString("PRIX") + "\t";
             res += rs.getString("VENTES") + "\t";
             res += rs.getString("TOTAL") + "\t";
             System.out.println(res);
         }
+        System.out.println("__________________________");
+    }
+
+    public void updateCafe() throws SQLException
+    {
+        String update = ("UPDATE CAFE" +
+                " SET VENTES = 75" +
+                " WHERE NOM_CAFE LIKE 'Colombian'");
+        stmt.executeUpdate(update);
+    }
+
+
+    public static void main(String[] args) throws Exception
+    {
+
+        Main main = new Main();
+        main.creerTable();
+        main.requetesSelectCafe();
+        main.updateCafe();
+        main.requetesSelectCafe();
+        main.close();
     }
 }
