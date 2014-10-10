@@ -14,10 +14,18 @@ public class Main
     String mdp = "1234";
     Statement stmt;
 
+    /**
+     * Constructeur pour utiliser un autre serveur que flatbrains
+     * @param nomBD Nom de la base de données
+     * @param url URL vers la BD
+     * @param login Login
+     * @param mdp Mot de passe
+     * @throws Exception
+     */
     public Main(String nomBD, String url, String login, String mdp) throws Exception
     {
         this.nomBD = nomBD;
-        this.url = url;
+        this.url = url + nomBD;
         this.login = login;
         this.mdp = mdp;
 
@@ -29,6 +37,11 @@ public class Main
         stmt = con.createStatement();
     }
 
+
+    /**
+     * Constructeur pour se connecter à flatbrains par défaut
+     * @throws Exception
+     */
     public Main() throws Exception
     {
         Class.forName("com.mysql.jdbc.Driver"); //Chargement du driver
@@ -138,13 +151,13 @@ public class Main
                     " PRIX FLOAT," +
                     "VENTES INTEGER," +
                     " TOTAL INTEGER)";
-            String creerTableFournsseur = "CREATE TABLE FOURNISSEUR" +
+            String creerTableFournsseur = "CREATE TABLE FOURNISSEURS" +
                     "(FO_ID INTEGER," +
-                    "NOM_FO VARCHAR(32)," +
-                    "RUE VARCHAR(32)," +
-                    "VILLE VARCHAR(32)," +
-                    "ETAT VARCHAR(32)," +
-                    "CODE_POSTALE VARCHAR(32))";
+                    "NOM_FO VARCHAR(40)," +
+                    "RUE VARCHAR(40)," +
+                    "VILLE VARCHAR(20)," +
+                    "ETAT VARCHAR(2)," +
+                    "CODE_POSTALE VARCHAR(5))";
 
             stmt.executeUpdate(creerTableCafe);
             stmt.executeUpdate(creerTableFournsseur);
@@ -161,7 +174,13 @@ public class Main
                 " ('Colombian_Decaf', 101, 8.99, 0, 0) , " +
                 " ('French_Roast_Decaf', 49, 9.99, 0, 0)";
 
+        String insertFournisseur = "INSERT INTO FOURNISSEURS VALUES "+
+                "(101,'Acme, Inc.',\"+ \"'99 Market Street', 'Groundsville', 'CA', '95199')," +
+                "(49,'Superior " + "Coffee', '1 Party Place', 'Mendocino', 'CA','95460')," +
+                "(150,'The High\"+ \"Ground', '100 Coffee Lane', 'Meadows', 'CA','93966')";
+
         stmt.executeUpdate(insertCafe);
+        stmt.executeUpdate(insertFournisseur);
     }
 
     /**
