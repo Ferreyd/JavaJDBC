@@ -27,10 +27,7 @@ public class Main
     {
         this.nomBD = nomBD; this.url = url + nomBD; this.login = login; this.mdp = mdp;
 
-        Class.forName("com.mysql.jdbc.Driver"); //Chargement du driver
-
-        con = DriverManager.getConnection(url, login, mdp); checkForSQLWarnings(con.getWarnings()); printInfo();
-        stmt = con.createStatement();
+        connetion(url,nomBD,login,mdp);
     }
 
 
@@ -40,6 +37,19 @@ public class Main
      * @throws Exception
      */
     public Main() throws Exception
+    {
+        connetion(url,nomBD,login,mdp);
+    }
+
+    /**
+     * Méthode qui gere la connection à la BD
+     * @param nomBD Nom de la base de données
+     * @param url   URL vers la BD
+     * @param login Login
+     * @param mdp   Mot de passe
+     * @throws Exception
+     */
+    public void connetion(String url, String nomBD, String login, String mdp) throws Exception
     {
         Class.forName("com.mysql.jdbc.Driver"); //Chargement du driver
 
