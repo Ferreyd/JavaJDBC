@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="899900655">
+  <component name="DataSourceManagerImpl" format="xml" hash="405799412">
     <data-source source="LOCAL" name="JDBC Test- test@flatbrains.eu" uuid="41375645-5124-449e-8194-3d6c64900305">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>

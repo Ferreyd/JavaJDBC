@@ -196,15 +196,43 @@ public class Main
         stmt.executeUpdate(update);
     }
 
+    public void preparedStatements() throws SQLException
+    {
+        PreparedStatement updateVentes;
+        String updateString = "update CAFE set VENTES = ? WHERE NOM_CAFE LIKE ? ";
+        updateVentes = con.prepareStatement(updateString);
+        int[] VentesDeLaSemaine = {175, 150, 60, 155, 90};
+        String[] cafes = {"Colombian", "French_Roast", "Espresso", "Colombian_Decaf", "French_Roast_Decaf"};
+        int len = cafes.length;
+        int paramSetInt = 1;
+        int paramSetString = 2;
+        for(int i = 0; i < len; i++)
+        {
+            updateVentes.setInt(paramSetInt, VentesDeLaSemaine[i]);
+            updateVentes.setString(paramSetString, cafes[i]);
+            updateVentes.executeUpdate();
+
+        }
+    }
 
     public static void main(String[] args) throws Exception
     {
 
         Main main = new Main();
+        System.out.println("### Creer Table ###");
         main.creerTable();
+        System.out.println("### Requetes Select Cafe ###");
         main.requetesSelectCafe();
+        System.out.println("### Update Cafe ###");
         main.updateCafe();
+        System.out.println("### Requetes Select Cafe ###");
         main.requetesSelectCafe();
+        System.out.println("### Prepared Statements ###");
+        main.preparedStatements();
+        System.out.println("### Requetes Select Cafe ###");
+        main.requetesSelectCafe();
+        System.out.println("### Close ###");
         main.close();
     }
+
 }
