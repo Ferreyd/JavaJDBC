@@ -30,23 +30,16 @@
       <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.77272725" vertical-offset="2601" max-vertical-offset="4471">
-              <caret line="180" column="0" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.088495575" vertical-offset="3248" max-vertical-offset="4199">
+              <caret line="194" column="89" selection-start-line="194" selection-start-column="89" selection-end-line="194" selection-end-column="89" />
               <folding>
-                <marker date="1412928928179" expanded="true" signature="82:515" placeholder="INSERT INTO ..." />
-                <marker date="1412928928179" expanded="true" signature="94:515" placeholder="INSERT INTO ..." />
-                <marker date="1412928928179" expanded="true" signature="4131:4352" placeholder="CREATE TABLE..CAFE..." />
-                <marker date="1412928928179" expanded="true" signature="4398:4681" placeholder="CREATE TABLE..FOURNISSEURS..." />
-                <marker date="1412928928179" expanded="true" signature="4924:5233" placeholder="INSERT INTO ..." />
-                <marker date="1412928928179" expanded="true" signature="5273:5341" placeholder="INSERT INTO ..." />
-                <marker date="1412928928179" expanded="true" signature="5273:5496" placeholder="INSERT INTO ..." />
-                <marker date="1412928928179" expanded="true" signature="5273:5398" placeholder="INSERT INTO ..." />
-                <marker date="1412928928179" expanded="true" signature="5273:5585" placeholder="INSERT INTO ..." />
-                <marker date="1412928928179" expanded="true" signature="5273:5586" placeholder="INSERT INTO ..." />
-                <marker date="1412928928179" expanded="true" signature="5901:5919" placeholder="SELECT * FRO..CAFE..." />
-                <marker date="1412928928179" expanded="true" signature="6422:6467" placeholder="UPDATE CAFES..." />
-                <marker date="1412928928179" expanded="true" signature="6422:6523" placeholder="UPDATE CAFES..." />
-                <marker date="1412928928179" expanded="true" signature="6704:6752" placeholder="update CAFE ..." />
+                <marker date="1412929509550" expanded="true" signature="3934:4135" placeholder="CREATE TABLE..CAFE..." />
+                <marker date="1412929509550" expanded="true" signature="4169:4404" placeholder="CREATE TABLE..FOURNISSEURS..." />
+                <marker date="1412929509550" expanded="true" signature="4671:4980" placeholder="INSERT INTO ..." />
+                <marker date="1412929509550" expanded="true" signature="5020:5333" placeholder="INSERT INTO ..." />
+                <marker date="1412929509550" expanded="true" signature="5692:5710" placeholder="SELECT * FRO..CAFE..." />
+                <marker date="1412929509550" expanded="true" signature="6231:6405" placeholder="SELECT CAFE...CAFE..." />
+                <marker date="1412929509550" expanded="true" signature="7099:7147" placeholder="update CAFE ..." />
               </folding>
             </state>
           </provider>
@@ -72,10 +65,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="960" />
+    <option name="width" value="960" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -453,7 +445,7 @@
       <workItem from="1412330796328" duration="363000" />
       <workItem from="1412666784979" duration="5253000" />
       <workItem from="1412683066611" duration="3356000" />
-      <workItem from="1412921051767" duration="7105000" />
+      <workItem from="1412921051767" duration="7687000" />
     </task>
     <task id="LOCAL-00001" summary="Ajout d'une méthode permettant de faire une requete simple&#10;Ajout d'une méthode permettant de vérifier que les données existent déjà">
       <created>1412685562795</created>
@@ -467,14 +459,18 @@
       <created>1412927262627</created>
       <updated>1412927262627</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Ajout de la table Fournisseurs (correcte)&#10;Ajout des données de la table de cette dernière">
+      <created>1412928975157</created>
+      <updated>1412928975157</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16077000" />
+    <option name="totallyTimeSpent" value="16659000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="960" y="0" width="960" height="1040" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -482,7 +478,7 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.09541578" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19888888" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -492,13 +488,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12473348" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12473348" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39867842" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32683983" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33259913" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -523,7 +519,8 @@
     <MESSAGE value="Ajout d'une méthode permettant de faire une requete simple&#10;Ajout d'une méthode permettant de vérifier que les données existent déjà" />
     <MESSAGE value="Ajout d'un constructeur sans paramètres qui se connecte à flatbrains" />
     <MESSAGE value="Fin du TP8" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fin du TP8" />
+    <MESSAGE value="Ajout de la table Fournisseurs (correcte)&#10;Ajout des données de la table de cette dernière" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la table Fournisseurs (correcte)&#10;Ajout des données de la table de cette dernière" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -538,20 +535,13 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="2644" max-vertical-offset="3638">
           <caret line="176" column="36" selection-start-line="176" selection-start-column="36" selection-end-line="176" selection-end-column="36" />
           <folding>
-            <marker date="1412928928179" expanded="true" signature="82:515" placeholder="INSERT INTO ..." />
-            <marker date="1412928928179" expanded="true" signature="94:515" placeholder="INSERT INTO ..." />
-            <marker date="1412928928179" expanded="true" signature="4131:4352" placeholder="CREATE TABLE..CAFE..." />
-            <marker date="1412928928179" expanded="true" signature="4398:4681" placeholder="CREATE TABLE..FOURNISSEURS..." />
-            <marker date="1412928928179" expanded="true" signature="4924:5233" placeholder="INSERT INTO ..." />
-            <marker date="1412928928179" expanded="true" signature="5273:5341" placeholder="INSERT INTO ..." />
-            <marker date="1412928928179" expanded="true" signature="5273:5496" placeholder="INSERT INTO ..." />
-            <marker date="1412928928179" expanded="true" signature="5273:5398" placeholder="INSERT INTO ..." />
-            <marker date="1412928928179" expanded="true" signature="5273:5585" placeholder="INSERT INTO ..." />
-            <marker date="1412928928179" expanded="true" signature="5273:5586" placeholder="INSERT INTO ..." />
-            <marker date="1412928928179" expanded="true" signature="5901:5919" placeholder="SELECT * FRO..CAFE..." />
-            <marker date="1412928928179" expanded="true" signature="6422:6467" placeholder="UPDATE CAFES..." />
-            <marker date="1412928928179" expanded="true" signature="6422:6523" placeholder="UPDATE CAFES..." />
-            <marker date="1412928928179" expanded="true" signature="6704:6752" placeholder="update CAFE ..." />
+            <marker date="1412929509550" expanded="true" signature="3934:4135" placeholder="CREATE TABLE..CAFE..." />
+            <marker date="1412929509550" expanded="true" signature="4169:4404" placeholder="CREATE TABLE..FOURNISSEURS..." />
+            <marker date="1412929509550" expanded="true" signature="4671:4980" placeholder="INSERT INTO ..." />
+            <marker date="1412929509550" expanded="true" signature="5020:5333" placeholder="INSERT INTO ..." />
+            <marker date="1412929509550" expanded="true" signature="5692:5710" placeholder="SELECT * FRO..CAFE..." />
+            <marker date="1412929509550" expanded="true" signature="6231:6405" placeholder="SELECT CAFE...CAFE..." />
+            <marker date="1412929509550" expanded="true" signature="7099:7147" placeholder="update CAFE ..." />
           </folding>
         </state>
       </provider>
@@ -561,20 +551,13 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="2057" max-vertical-offset="2431">
           <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
           <folding>
-            <marker date="1412928928179" expanded="true" signature="82:515" placeholder="INSERT INTO ..." />
-            <marker date="1412928928179" expanded="true" signature="94:515" placeholder="INSERT INTO ..." />
-            <marker date="1412928928179" expanded="true" signature="4131:4352" placeholder="CREATE TABLE..CAFE..." />
-            <marker date="1412928928179" expanded="true" signature="4398:4681" placeholder="CREATE TABLE..FOURNISSEURS..." />
-            <marker date="1412928928179" expanded="true" signature="4924:5233" placeholder="INSERT INTO ..." />
-            <marker date="1412928928179" expanded="true" signature="5273:5341" placeholder="INSERT INTO ..." />
-            <marker date="1412928928179" expanded="true" signature="5273:5496" placeholder="INSERT INTO ..." />
-            <marker date="1412928928179" expanded="true" signature="5273:5398" placeholder="INSERT INTO ..." />
-            <marker date="1412928928179" expanded="true" signature="5273:5585" placeholder="INSERT INTO ..." />
-            <marker date="1412928928179" expanded="true" signature="5273:5586" placeholder="INSERT INTO ..." />
-            <marker date="1412928928179" expanded="true" signature="5901:5919" placeholder="SELECT * FRO..CAFE..." />
-            <marker date="1412928928179" expanded="true" signature="6422:6467" placeholder="UPDATE CAFES..." />
-            <marker date="1412928928179" expanded="true" signature="6422:6523" placeholder="UPDATE CAFES..." />
-            <marker date="1412928928179" expanded="true" signature="6704:6752" placeholder="update CAFE ..." />
+            <marker date="1412929509550" expanded="true" signature="3934:4135" placeholder="CREATE TABLE..CAFE..." />
+            <marker date="1412929509550" expanded="true" signature="4169:4404" placeholder="CREATE TABLE..FOURNISSEURS..." />
+            <marker date="1412929509550" expanded="true" signature="4671:4980" placeholder="INSERT INTO ..." />
+            <marker date="1412929509550" expanded="true" signature="5020:5333" placeholder="INSERT INTO ..." />
+            <marker date="1412929509550" expanded="true" signature="5692:5710" placeholder="SELECT * FRO..CAFE..." />
+            <marker date="1412929509550" expanded="true" signature="6231:6405" placeholder="SELECT CAFE...CAFE..." />
+            <marker date="1412929509550" expanded="true" signature="7099:7147" placeholder="update CAFE ..." />
           </folding>
         </state>
       </provider>
@@ -584,20 +567,13 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="476">
           <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
           <folding>
-            <marker date="1412928928179" expanded="true" signature="82:515" placeholder="INSERT INTO ..." />
-            <marker date="1412928928179" expanded="true" signature="94:515" placeholder="INSERT INTO ..." />
-            <marker date="1412928928179" expanded="true" signature="4131:4352" placeholder="CREATE TABLE..CAFE..." />
-            <marker date="1412928928179" expanded="true" signature="4398:4681" placeholder="CREATE TABLE..FOURNISSEURS..." />
-            <marker date="1412928928179" expanded="true" signature="4924:5233" placeholder="INSERT INTO ..." />
-            <marker date="1412928928179" expanded="true" signature="5273:5341" placeholder="INSERT INTO ..." />
-            <marker date="1412928928179" expanded="true" signature="5273:5496" placeholder="INSERT INTO ..." />
-            <marker date="1412928928179" expanded="true" signature="5273:5398" placeholder="INSERT INTO ..." />
-            <marker date="1412928928179" expanded="true" signature="5273:5585" placeholder="INSERT INTO ..." />
-            <marker date="1412928928179" expanded="true" signature="5273:5586" placeholder="INSERT INTO ..." />
-            <marker date="1412928928179" expanded="true" signature="5901:5919" placeholder="SELECT * FRO..CAFE..." />
-            <marker date="1412928928179" expanded="true" signature="6422:6467" placeholder="UPDATE CAFES..." />
-            <marker date="1412928928179" expanded="true" signature="6422:6523" placeholder="UPDATE CAFES..." />
-            <marker date="1412928928179" expanded="true" signature="6704:6752" placeholder="update CAFE ..." />
+            <marker date="1412929509550" expanded="true" signature="3934:4135" placeholder="CREATE TABLE..CAFE..." />
+            <marker date="1412929509550" expanded="true" signature="4169:4404" placeholder="CREATE TABLE..FOURNISSEURS..." />
+            <marker date="1412929509550" expanded="true" signature="4671:4980" placeholder="INSERT INTO ..." />
+            <marker date="1412929509550" expanded="true" signature="5020:5333" placeholder="INSERT INTO ..." />
+            <marker date="1412929509550" expanded="true" signature="5692:5710" placeholder="SELECT * FRO..CAFE..." />
+            <marker date="1412929509550" expanded="true" signature="6231:6405" placeholder="SELECT CAFE...CAFE..." />
+            <marker date="1412929509550" expanded="true" signature="7099:7147" placeholder="update CAFE ..." />
           </folding>
         </state>
       </provider>
@@ -626,23 +602,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.77272725" vertical-offset="2601" max-vertical-offset="4471">
-          <caret line="180" column="0" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.088495575" vertical-offset="3248" max-vertical-offset="4199">
+          <caret line="194" column="89" selection-start-line="194" selection-start-column="89" selection-end-line="194" selection-end-column="89" />
           <folding>
-            <marker date="1412928928179" expanded="true" signature="82:515" placeholder="INSERT INTO ..." />
-            <marker date="1412928928179" expanded="true" signature="94:515" placeholder="INSERT INTO ..." />
-            <marker date="1412928928179" expanded="true" signature="4131:4352" placeholder="CREATE TABLE..CAFE..." />
-            <marker date="1412928928179" expanded="true" signature="4398:4681" placeholder="CREATE TABLE..FOURNISSEURS..." />
-            <marker date="1412928928179" expanded="true" signature="4924:5233" placeholder="INSERT INTO ..." />
-            <marker date="1412928928179" expanded="true" signature="5273:5341" placeholder="INSERT INTO ..." />
-            <marker date="1412928928179" expanded="true" signature="5273:5496" placeholder="INSERT INTO ..." />
-            <marker date="1412928928179" expanded="true" signature="5273:5398" placeholder="INSERT INTO ..." />
-            <marker date="1412928928179" expanded="true" signature="5273:5585" placeholder="INSERT INTO ..." />
-            <marker date="1412928928179" expanded="true" signature="5273:5586" placeholder="INSERT INTO ..." />
-            <marker date="1412928928179" expanded="true" signature="5901:5919" placeholder="SELECT * FRO..CAFE..." />
-            <marker date="1412928928179" expanded="true" signature="6422:6467" placeholder="UPDATE CAFES..." />
-            <marker date="1412928928179" expanded="true" signature="6422:6523" placeholder="UPDATE CAFES..." />
-            <marker date="1412928928179" expanded="true" signature="6704:6752" placeholder="update CAFE ..." />
+            <marker date="1412929509550" expanded="true" signature="3934:4135" placeholder="CREATE TABLE..CAFE..." />
+            <marker date="1412929509550" expanded="true" signature="4169:4404" placeholder="CREATE TABLE..FOURNISSEURS..." />
+            <marker date="1412929509550" expanded="true" signature="4671:4980" placeholder="INSERT INTO ..." />
+            <marker date="1412929509550" expanded="true" signature="5020:5333" placeholder="INSERT INTO ..." />
+            <marker date="1412929509550" expanded="true" signature="5692:5710" placeholder="SELECT * FRO..CAFE..." />
+            <marker date="1412929509550" expanded="true" signature="6231:6405" placeholder="SELECT CAFE...CAFE..." />
+            <marker date="1412929509550" expanded="true" signature="7099:7147" placeholder="update CAFE ..." />
           </folding>
         </state>
       </provider>
